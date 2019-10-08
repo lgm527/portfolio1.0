@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 900;
+}
+
+#bio {
+  font-family: 'Muli', sans-serif;
+  font-size: calc(2px + 2vmin);
+  margin: 1vh 1vw;
+}
