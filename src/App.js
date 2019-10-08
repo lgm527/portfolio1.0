@@ -20,7 +20,7 @@ class App extends React.Component {
       <div className="App">
 
         <header className="App-header">
-          <div id='name'><h1>Laurell McCaffrey</h1></div>
+          <h1 id='name'>Laurell McCaffrey</h1>
           <div onClick={ () => {this.handleClick('about')} }><h1>About</h1></div>
           <div onClick={ () => {this.handleClick('work')} }><h1>Work</h1></div>
           <div onClick={ () => {this.handleClick('contact')} }><h1>Contact</h1></div>

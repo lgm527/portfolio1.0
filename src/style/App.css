@@ -26,7 +26,7 @@
 }
 
 #name {
-  font-size: calc(10px + 2vmin);
+  font-size: calc(50px + 2vmin);
   cursor: default;
 }
 
@@ -46,6 +46,8 @@
 
 .App-footer > a {
   padding: 3vw .5vw;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
 }
 
 .App-footer > a:hover {
