@@ -1,5 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+import './style/Contact.css';
 
 class Contact extends React.Component {
 
@@ -23,6 +24,7 @@ class Contact extends React.Component {
     emailjs.send('default_service', 'contact_form', templateParams, 'user_930tGXbXZ8DTaedds14NL' )
        .then((response) => {
            console.log('SUCCESS!', response.status, response.text);
+
        }, (err) => {
            console.log('FAILED...', err);
       });
@@ -31,16 +33,18 @@ class Contact extends React.Component {
 
   render(){
     return (
-      <div className="Contact">
+      <div className="contact_container">
 
         <form id="contact-form" onSubmit={this.handleSubmit}>
             <input type="hidden" name="contact" />
             <label>Name</label>
-            <input type="text" name="from_name" id='from_name' onChange={this.handleChange} />
+            <input type="text" placeholder='Name' name="from_name" id='from_name' onChange={this.handleChange} />
+
             <label>Email</label>
-            <input type="email" name="from_email" id='from_email' onChange={this.handleChange} />
+            <input type="email" placeholder='Email Address' name="from_email" id='from_email' onChange={this.handleChange} />
+
             <label>Message</label>
-            <textarea name="message" id='message' onChange={this.handleChange} />
+            <textarea name="message" id='message' placeholder="Hello, I'd like to contact you about..." onChange={this.handleChange} />
             <input type="submit" value="Send" />
         </form>
 

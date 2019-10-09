@@ -22,3 +22,17 @@
   filter: none;
   -webkit-filter: grayscale(0%);
 }
+
+.show {
+  margin: 10vh 10vw;
+}
+
+#showImage {
+  width: 15%;
+  height: 15%;
+}
+
+#x {
+  float: right;
+  cursor: pointer;
+}
