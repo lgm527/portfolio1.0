@@ -1,11 +1,5 @@
-img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
-
-img:hover {
-  filter: none;
-  -webkit-filter: grayscale(0%);
+.container {
+  margin: 5em 0;
 }
 
 .projects {
@@ -13,10 +7,18 @@ img:hover {
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-rows: repeat(1, 400px);
+  margin: 10vh 0;
 }
 
 .projects > div > img  {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.projects > div > img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
 }

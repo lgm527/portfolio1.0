@@ -6,10 +6,7 @@ import tre from './assets/tretre.png';
 
 function Work() {
   return (
-    <div>
-
-    <h1>Projects</h1>
-
+    <div className='container'>
     <div className="projects">
       <div>
         <img src={tre} alt='tree' />

@@ -17,9 +17,3 @@ h1 {
   font-style: italic;
   font-weight: 900;
 }
-
-#bio {
-  font-family: 'Muli', sans-serif;
-  font-size: calc(2px + 2vmin);
-  margin: 1vh 1vw;
-}

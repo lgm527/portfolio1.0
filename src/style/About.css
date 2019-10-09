@@ -1,0 +1,21 @@
+#me {
+  width:  28%;
+  height: 28%;
+  float: right;
+  margin: 1vh 4vw;
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+#bio {
+  float: left;
+  font-family: 'Muli', sans-serif;
+  font-size: calc(2px + 2vmin);
+  margin: 1vh 4vw;
+  width: 40%;
+  text-align: left;
+}
+
+.about {
+  margin: 11vh 7vw;
+}
