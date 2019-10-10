@@ -62,12 +62,14 @@ class Work extends React.Component {
 
       { this.state.show ?
         <div className='show'>
-          <span id='x' onClick={this.goBack}>X</span>
+          <h2><span id='x' onClick={this.goBack}>X</span></h2>
           <img id='showImage' src={this.state.img} alt='project' />
+          <div id='showText'>
           <p>{this.state.name}</p>
           <p>{this.state.description}</p>
           <p><a href={this.state.demo}>Demo</a></p>
           {this.showGitHubs()}
+          </div>
         </div>
         :
         <div className="projects">

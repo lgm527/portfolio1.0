@@ -1,7 +1,7 @@
 #me {
   width:  28%;
   height: 28%;
-  float: right;
+  float: left;
   margin: 1vh 4vw;
   filter: none;
   -webkit-filter: grayscale(0%);
@@ -9,11 +9,13 @@
 
 #bio {
   float: left;
-  font-family: 'Muli', sans-serif;
-  font-size: calc(2px + 2vmin);
+  font-size: calc(7px + 2vmin);
   margin: 1vh 4vw;
   width: 40%;
   text-align: left;
+  overflow: auto;
+  overflow-y: auto;
+  max-height: 55vh;
 }
 
 .about {

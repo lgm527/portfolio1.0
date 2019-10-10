@@ -1,11 +1,11 @@
 .contact_container {
   padding: 3em;
-  margin: 5vh 3vw;
+  margin: 0 3vw;
   overflow: none;
 }
 
 input[type=text], input[type=email], textarea {
-  width: 100%; /* Full width */
+  width: 50%; /* Full width */
   padding: 1em; /* Some padding */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
@@ -13,14 +13,19 @@ input[type=text], input[type=email], textarea {
   margin-bottom: 1em; /* Bottom margin */
   /* margin-left: 3em; */
   margin-right: 5em;
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family: 'Montserrat', sans-serif;
+}
+
+label {
+  padding-right: 4em;
 }
 
 input[type=submit] {
   background: none;
   color: white;
   border: none;
-  padding: 0;
+  padding-right: 4em;
   font: inherit;
   cursor: pointer;
   outline: inherit;
@@ -29,6 +34,7 @@ input[type=submit] {
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
   font-weight: 900;
+  z-index: 2;
 }
 
 input[type=submit]:hover {

@@ -7,7 +7,8 @@ class Contact extends React.Component {
   state = {
     from_name: '',
     from_email: '',
-    message: ''
+    message: '',
+    complete: false
   }
 
   handleChange = (e) => {
@@ -24,9 +25,9 @@ class Contact extends React.Component {
     emailjs.send('default_service', 'contact_form', templateParams, 'user_930tGXbXZ8DTaedds14NL' )
        .then((response) => {
            console.log('SUCCESS!', response.status, response.text);
-
+           this.setState({complete: true})
        }, (err) => {
-           console.log('FAILED...', err);
+           window.alert('Contact unsuccessful because: ', err);
       });
   }
 
@@ -35,18 +36,26 @@ class Contact extends React.Component {
     return (
       <div className="contact_container">
 
-        <form id="contact-form" onSubmit={this.handleSubmit}>
+        {
+          this.state.complete ?
+          <div>
+            <h1>Thank you for your email!</h1>
+          </div>
+          :
+          <form id="contact-form" onSubmit={this.handleSubmit} autoComplete="off">
             <input type="hidden" name="contact" />
-            <label>Name</label>
+            <label>Name</label><br></br>
             <input type="text" placeholder='Name' name="from_name" id='from_name' onChange={this.handleChange} />
 
-            <label>Email</label>
+            <br></br><label>Email</label><br></br>
             <input type="email" placeholder='Email Address' name="from_email" id='from_email' onChange={this.handleChange} />
 
-            <label>Message</label>
+            <br></br><label>Message</label><br></br>
             <textarea name="message" id='message' placeholder="Hello, I'd like to contact you about..." onChange={this.handleChange} />
-            <input type="submit" value="Send" />
+            <br></br><input type="submit" value="Send" />
         </form>
+
+      }
 
       </div>
     )
