@@ -6,7 +6,7 @@
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-template-rows: repeat(1, 100px);
+  grid-template-rows: repeat(1, 150px);
   margin: 10vh 0;
 }
 
@@ -14,13 +14,20 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .projects > div > img:hover {
   filter: none;
   -webkit-filter: grayscale(0%);
+}
+
+#tre {
+  object-position: 70%;
 }
 
 .show {

@@ -1,11 +1,13 @@
 import React from 'react';
 import './style/Resume.css';
+import resume from './assets/McCaffrey_Resume.pdf'
 
 class Resume extends React.Component {
 
   render(){
     return (
       <div className='resume'>
+      <h1><a id='download' href={resume} download>Download</a></h1>
       <h2>TECHNICAL PROJECTS</h2>
       <p>
       <b>TreeTrends</b> - <a href='https://github.com/lgm527/treetrends-client'>Github (Client)</a> | <a href='https://github.com/lgm527/treetrends-API'>Github (API)</a> | <a href='https://www.youtube.com/watch?v=rEuIcwjCHzc&feature=youtu.be'>Demo</a>

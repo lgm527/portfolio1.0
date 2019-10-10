@@ -15,3 +15,9 @@ a:hover {
   transition: all .5s ease;
   -webkit-transition: all .5s ease;
 }
+
+#download {
+  border: 5px solid white;
+  padding: 5px;
+  text-decoration: none;
+}
