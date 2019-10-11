@@ -16,6 +16,8 @@
   overflow: auto;
   overflow-y: auto;
   max-height: 55vh;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 400;
 }
 
 .about {

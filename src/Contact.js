@@ -44,7 +44,7 @@ class Contact extends React.Component {
           this.state.complete ?
           <div>
             <h1>Thank you for your email!</h1>
-            <h2><a id='anotherOne' onClick={this.handleClick}>Send Another ↺</a></h2>
+            <h2 id='anotherOne' onClick={this.handleClick}>Send Another ↺</h2>
           </div>
           :
           <form id="contact-form" onSubmit={this.handleSubmit} autoComplete="off">

@@ -14,7 +14,7 @@ input[type=text], input[type=email], textarea {
   /* margin-left: 3em; */
   margin-right: 5em;
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 label {

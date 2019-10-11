@@ -35,16 +35,12 @@
   width: 60%;
 }
 
-#showImage {
-  width: 20%;
-  height: 20%;
-  float: center;
-}
-
 #showText {
   float: left;
   width: 50%;
   text-align: left;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
 }
 
 #x {
