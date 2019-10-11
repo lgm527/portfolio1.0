@@ -53,7 +53,7 @@
 }
 
 #copy {
-  font-size: .5em;
+  font-size: .7em;
 }
 
 .stuff {
@@ -67,7 +67,7 @@
   text-align: right;
   align-content: right;
   bottom: 0;
-  right: 2em;
+  right: 3em;
   position: fixed;
   width: 50%;
 }

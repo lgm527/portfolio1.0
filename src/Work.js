@@ -51,10 +51,8 @@ class Work extends React.Component {
   }
 
   showGitHubs = () => {
-    return this.state.github.map((link) => {return <p key={link.index}><a href={link}>Github</a></p>})
+    return this.state.github.map((link, i) => {return <p key={i}><a href={link}>Github {i+1}</a></p>})
   }
-
-//return <a href={link}>Github</a>
 
   render(){
     return (
