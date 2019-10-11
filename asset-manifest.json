@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "laurellmccaffrey.com/static/css/main.9a691b64.chunk.css",
+    "main.js": "laurellmccaffrey.com/static/js/main.e626563e.chunk.js",
+    "main.js.map": "laurellmccaffrey.com/static/js/main.e626563e.chunk.js.map",
+    "runtime-main.js": "laurellmccaffrey.com/static/js/runtime-main.1237650a.js",
+    "runtime-main.js.map": "laurellmccaffrey.com/static/js/runtime-main.1237650a.js.map",
+    "static/js/2.71777961.chunk.js": "laurellmccaffrey.com/static/js/2.71777961.chunk.js",
+    "static/js/2.71777961.chunk.js.map": "laurellmccaffrey.com/static/js/2.71777961.chunk.js.map",
+    "index.html": "laurellmccaffrey.com/index.html",
+    "precache-manifest.15deabfddb85d75130f8bce8e3ee007c.js": "laurellmccaffrey.com/precache-manifest.15deabfddb85d75130f8bce8e3ee007c.js",
+    "service-worker.js": "laurellmccaffrey.com/service-worker.js",
+    "static/css/main.9a691b64.chunk.css.map": "laurellmccaffrey.com/static/css/main.9a691b64.chunk.css.map",
+    "static/media/McCaffrey_Resume.pdf": "laurellmccaffrey.com/static/media/McCaffrey_Resume.421878fc.pdf",
+    "static/media/artstagram.png": "laurellmccaffrey.com/static/media/artstagram.63d8a1d2.png",
+    "static/media/gitjobs.png": "laurellmccaffrey.com/static/media/gitjobs.ee0602f9.png",
+    "static/media/me.jpeg": "laurellmccaffrey.com/static/media/me.1d3a898a.jpeg",
+    "static/media/tretre.png": "laurellmccaffrey.com/static/media/tretre.1f2c836c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1237650a.js",
+    "static/js/2.71777961.chunk.js",
+    "static/css/main.9a691b64.chunk.css",
+    "static/js/main.e626563e.chunk.js"
+  ]
+}
