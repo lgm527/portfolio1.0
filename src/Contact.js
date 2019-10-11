@@ -22,7 +22,7 @@ class Contact extends React.Component {
      from_email: this.state.from_email,
      message: this.state.message
     };
-    emailjs.send('default_service', 'contact_form', templateParams, 'user_930tGXbXZ8DTaedds14NL' )
+    emailjs.send('default_service', 'contact_form', templateParams, process.env.REACT_APP_EmailJS_ID )
        .then((response) => {
            console.log('SUCCESS!', response.status, response.text);
            this.setState({complete: true})

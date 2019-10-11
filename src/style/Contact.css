@@ -39,15 +39,18 @@ input[type=submit] {
   z-index: 2;
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover, #anotherOne:hover {
   color: gray;
   opacity: .3;
 }
 
 #anotherOne {
+  display: inline-block;
   color: white;
   border: 5px solid white;
-  padding: 5px;
+  padding: 10px;
   cursor: pointer;
   text-decoration: none;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
 }
