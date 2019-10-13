@@ -3,6 +3,7 @@ import './style/Work.css';
 import art from './assets/artstagram.png';
 import gitjobs from './assets/gitjobs.png';
 import tre from './assets/tretre.png';
+import cfs from './assets/cfs.png';
 
 class Work extends React.Component {
 
@@ -46,6 +47,14 @@ class Work extends React.Component {
         github: ['https://github.com/lgm527/artstagram'],
         img: art
       })
+    } else if  (project === 'cfs') {
+      this.setState({
+        name: 'Connect For Success',
+        description: 'Dress For Success solution to bridge the networking gap for women. Connect for Success is a connection tool used to match current DFS clients with volunteers for needs-based skills sharing, and creates a way to match women based on shared background and other parameters. Project for the LYLAS Labs Women@Work Hackathon.',
+        demo: 'https://www.youtube.com/watch?v=L2SrzwwOh-I&feature=youtu.be',
+        github: ['https://github.com/lgm527/connectforsuccess/tree/laurell'],
+        img: cfs
+      })
     }
     this.setState({show: true})
   }
@@ -80,6 +89,10 @@ class Work extends React.Component {
 
           <div>
             <img src={art} alt='art' onClick={() => {this.handleClick('art')}}/>
+          </div>
+
+          <div>
+            <img src={cfs} alt='cfs' onClick={() => {this.handleClick('cfs')}}/>
           </div>
         </div>
     }
